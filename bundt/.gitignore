@@ -1,0 +1,13 @@
+.DS_Store
+node_modules
+*-lock.*
+*.lock
+*.log
+
+# tests
+build
+dist
+
+# generated
+/index.mjs
+/bin.js

@@ -1,0 +1,47 @@
+{
+  "name": "bundt",
+  "version": "2.0.0-next.5",
+  "repository": "lukeed/bundt",
+  "description": "A simple bundler for your delcious modules~!",
+  "license": "MIT",
+  "bin": "bin.js",
+  "exports": {
+    ".": "./index.mjs",
+    "./config": "./config/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "bin.js",
+    "index.d.ts",
+    "index.mjs",
+    "config"
+  ],
+  "author": {
+    "name": "Luke Edwards",
+    "email": "luke.edwards05@gmail.com",
+    "url": "https://lukeed.com"
+  },
+  "scripts": {
+    "build": "tsm build.ts",
+    "test": "uvu -r tsm src .test.ts"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "keywords": [
+    "bundler",
+    "release",
+    "library",
+    "targets"
+  ],
+  "dependencies": {
+    "esbuild": "^0.14.25",
+    "rewrite-imports": "^2.0.0",
+    "terser": "^5.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.21",
+    "tsm": "2.2.1",
+    "uvu": "0.5.3"
+  }
+}
